@@ -1,0 +1,18 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --clr-primary: #4891ff;
+  --clr-light: #f4f4f6;
+  --clr-color: #111;
+  --clr-bg-100: rgb(255, 255, 255);
+  --reg-fts: clamp(0.10rem, 1rem 2vw, 1.5rem);
+}
+
+body {
+  font-size: var(--reg-fts);
+}
