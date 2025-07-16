@@ -18,6 +18,12 @@
   --box-shadow-1:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: 'Poppins', sans-serif;;
   font-size: var(--s-fts);
@@ -81,21 +87,22 @@ nav {
   top: 0;
   left: 35%;
   right: 0;
-  bottom: 0;
   text-align: start;
   background-color: var(--clr-bg-100);
   height: 100dvh;
   padding: var(--padding-20);
   box-shadow: var(--box-shadow-1);
-  transition: 0.30s ease-in-out right;
+ 
   background-attachment: scroll;
-  
-  /*transform: translateY(100%);*/
+  transform: translateX(100%);
+   transition: 0.25s ease-in-out all;
+  transform-origin: left;
 }
 
 .swipe-right {
-  transform: translateY(0);
   transform-origin: right;
+  transform: rotateX(0);
+
 }
 
 ul {
@@ -120,7 +127,10 @@ nav a {
   font-size: var(--s-fts);
   font-weight: 600;
   transition: 0.30s color ease-in-out;
+  margin-inline: auto;
+  column-gap: 10px;
 }
+
 
 .login-button:hover, .login-button:focus {
   color: var(--clr-primary);
