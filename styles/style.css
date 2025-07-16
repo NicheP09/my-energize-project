@@ -8,11 +8,69 @@
 :root {
   --clr-primary: #4891ff;
   --clr-light: #f4f4f6;
-  --clr-color: #111;
+  --clr-dark: #111;
   --clr-bg-100: rgb(255, 255, 255);
-  --reg-fts: clamp(0.10rem, 1rem 2vw, 1.5rem);
+  --reg-fts: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --padding-15: 15px;
+  --padding-20: 20px;
 }
 
 body {
-  font-size: var(--reg-fts);
+  font-family: 'Poppins', sans-serif;;
+  font-size: var(--s-fts);
+  background-color: var(--clr-bg-100);
+  
 }
+
+.energize-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  
+}
+
+header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-20);
+ 
+}
+
+nav {
+  display: none;
+}
+.hamburger-button {
+  width: 40px;
+  position: relative;
+}
+button {
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+}
+.hamburger-button button, .hamburger-button button::before, .hamburger-button button::after {
+  width: 30px;
+  height: 3px;
+  background: var(--clr-dark);
+}
+
+.hamburger-button button::before, .hamburger-button button::after {
+  content: '';
+  position: absolute;
+}
+
+.hamburger-button button::before {
+  top: 4px;
+  right: 5px;
+
+
+}
+
+.hamburger-button button::after {
+  top: -4px ;
+  right: 5px;
+ 
+
+}
+
