@@ -8,14 +8,20 @@
 :root {
   --clr-primary: #4891ff;
   --clr-light: #f4f4f6;
+  --clr-light-1: #fff;
   --clr-dark: #111;
   --clr-a: rgb(51, 51, 51);
   --clr-bg-100: rgb(255, 255, 255);
-   --s-fts: clamp(0.8rem,  1.3rem, 1.5rem);
-  --reg-fts: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --xs-fts: clamp(1rem,  1.1rem, 1.5rem);
+   --s-fts: clamp(0.8rem,  1.4rem, 2.5rem);
+  --reg-fts: clamp(1.5rem, 2vw + 1rem, 3rem);
   --padding-15: 15px;
   --padding-20: 20px;
   --box-shadow-1:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  --margin-10: 10px;
+  --margin-20: 20px;
+  --margin-30: 30px;
+  --margin-40: 40px;
 }
 
 .flex1 {
@@ -24,13 +30,21 @@
   align-items: center;
 }
 
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: 'Poppins', sans-serif;;
-  font-size: var(--s-fts);
+   font-size: var(--s-fts);
   background-color: var(--clr-bg-100);
-  min-height: 100dvh;
+
   
 }
+
 
 .energize-wrapper {
   width: 100%;
@@ -135,5 +149,47 @@ nav a {
 .login-button:hover, .login-button:focus {
   color: var(--clr-primary);
 }
+main {
+  padding: var(--padding-15);
+  line-height: 1.3;
+}
+.hero {
+  height: 770px;
+  background: url(/images/hero-bg-mobile.png) center bottom / 350px 400px no-repeat;
+}
+.hero h1 {
+  margin-top: var(--margin-40)
+}
+
+.hero p {
+  font-size: var(--xs-fts);
+  margin-top: var(--margin-20);
+}
+
+.hero-btn-con {
+  margin-block: var(--margin-20);
+  
+  row-gap: 10px;
+}
+
+.hero-btn-con button {
+  width: 100%;
+  height: 50px;
+  font-size: var(--xs-fts);
+  font-weight: 600;
+  color: var(--clr-light-1);
+  background-color: var(--clr-primary);
+  border-radius: 10px;
+  
+}
+
+.hero-btn-con .sec-btn {
+  background-color: var(--clr-light);
+  color: var(--clr-a);
+  column-gap: 10px;
+}
+
+
+
 
 
