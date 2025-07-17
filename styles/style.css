@@ -15,6 +15,7 @@
   --clr-bg-100: rgb(255, 255, 255);
   --clr-pricing-bg: rgb(244, 244, 246);
   --clr-bg-0: rgb(0, 0, 0);
+  --clr-faq-bg: rgb(221, 221, 221);
 
   --xs-fts: clamp(1rem,  1.1rem, 1.5rem);
   --s-fts: clamp(0.8rem,  1.4rem, 2.5rem);
@@ -29,8 +30,9 @@
   --padding-40: 40px;
   --padding-50: 50px;
   --box-shadow-1:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  --margin-10: 5px;
+  --margin-5: 5px;
   --margin-10: 10px;
+  --margin-15: 15px;
   --margin-20: 20px;
   --margin-30: 30px;
   --margin-40: 40px;
@@ -53,6 +55,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .align-center {
@@ -89,6 +97,7 @@ header  {
 }
 button {
   border: transparent;
+  background: none;
   outline: transparent;
   cursor: pointer;
 }
@@ -138,8 +147,8 @@ nav {
 
 }
 
-ul {
-   list-style: none;
+nav ul {
+  list-style: none;
   padding-top: 70px;
   line-height: 2;
 }
@@ -266,7 +275,7 @@ main {
 
 .pricing-title {
   font-weight: 200;
-  margin-bottom: var(--margin-20);
+  margin-bottom: var(--margin-15);
   font-size: var(--h3-fts);
  
 }
@@ -333,9 +342,73 @@ border-color: #3333331a;
   background-color: var(--clr-light-1);
 }
 
+
 .h3 {
-   font-weight: 200;
+  font-weight: 200;
   margin-bottom: var(--margin-20);
   font-size: var(--h3-fts);
 }
+.faqs {
+  margin-inline: var(--margin-20);
+}
 
+.faqs-wrapper {
+  max-width: 800px;
+ 
+}
+.faqs-category {
+  max-width: 400px;
+  background: var(--clr-faq-bg);
+  padding: var(--padding-10) var(--padding-20);
+  padding-inline-end:  var(--padding-40);
+  border-radius: 10px;
+ 
+}
+
+.faqs-category ul {
+  list-style: none;
+}
+
+.faqs-category button {
+   font-weight: 600;
+   font-size: 12px;
+}
+
+.active {
+  background-color: var(--clr-primary);
+  padding: var(--padding-10) var(--padding-20);
+  border-radius: 5px;
+  color: var(--clr-light-1);
+ 
+}
+
+.faqs-answers-con {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.size {
+  font-size: 1.5rem;
+  cursor: pointer;
+ 
+  margin-left: var(--margin-10);
+  padding-inline-end: var(--padding-10);
+}
+
+.faqs-response {
+   margin-block: var(--margin-30) var(--margin-20);
+   font-weight: 100;
+}
+.faqs-tag {
+  white-space: nowrap;
+  margin-bottom: var(--margin-50);
+   font-weight: 600;
+
+} 
+
+
+
+.faqs-message {
+ display:  none; 
+}
