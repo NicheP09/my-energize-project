@@ -169,8 +169,12 @@ nav a {
   font-size: var(--s-fts);
   font-weight: 600;
   transition: 0.30s color ease-in-out;
+  background-color: var(--clr-light);
   margin-inline: auto;
-  column-gap: 10px;
+}
+
+.log{
+  margin-left: var(--margin-10)
 }
 
 
@@ -388,13 +392,7 @@ border-color: #3333331a;
   font-weight: 600;
 }
 
-.size {
-  font-size: 1.5rem;
-  cursor: pointer;
- 
-  margin-left: var(--margin-10);
-  padding-inline-end: var(--padding-10);
-}
+
 
 .faqs-response {
    margin-block: var(--margin-30) var(--margin-20);
@@ -404,11 +402,23 @@ border-color: #3333331a;
   white-space: nowrap;
   margin-bottom: var(--margin-50);
    font-weight: 600;
-
+   position: relative;
 } 
+.fa{
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: -11px;
+  top: -3px;
+ 
 
+}
 
 
 .faqs-message {
  display:  none; 
+}
+
+.show {
+  display: block;
 }
