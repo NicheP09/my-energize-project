@@ -12,11 +12,18 @@
   --clr-dark: #111;
   --clr-a: rgb(51, 51, 51);
   --clr-bg-100: rgb(255, 255, 255);
+  --clr-bg-0: rgb(0, 0, 0);
+
   --xs-fts: clamp(1rem,  1.1rem, 1.5rem);
    --s-fts: clamp(0.8rem,  1.4rem, 2.5rem);
   --reg-fts: clamp(1.5rem, 2vw + 1rem, 3rem);
+  --lg-fts: clamp(2rem, 3vw + 1.5rem, 3rem);
+  --padding-10: 10px;
   --padding-15: 15px;
   --padding-20: 20px;
+  --padding-30: 30px;
+  --padding-40: 40px;
+  --padding-50: 50px;
   --box-shadow-1:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   --margin-10: 10px;
   --margin-20: 20px;
@@ -24,6 +31,13 @@
   --margin-40: 40px;
 }
 
+
+a {
+   text-decoration: none;
+};
+li {
+    list-style: none;
+};
 .flex1 {
   display: flex;
   justify-content: center;
@@ -35,6 +49,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.align-center {
+  text-align: center;
 }
 
 body {
@@ -120,7 +137,7 @@ nav {
 }
 
 ul {
-  list-style: none;
+
   padding-top: 80px;
   line-height: 2;
 }
@@ -128,7 +145,7 @@ nav li {
   padding-bottom: var(--padding-20);
 }
 nav a {
-  text-decoration: none;
+ 
   color: var(--clr-a);
   font-weight: 600;
   font-size: var(--s-fts);
@@ -149,6 +166,7 @@ nav a {
 .login-button:hover, .login-button:focus {
   color: var(--clr-primary);
 }
+
 main {
   padding: var(--padding-15);
   line-height: 1.3;
@@ -172,7 +190,7 @@ main {
   row-gap: 10px;
 }
 
-.hero-btn-con button {
+.primary-button {
   width: 100%;
   height: 50px;
   font-size: var(--xs-fts);
@@ -189,7 +207,32 @@ main {
   column-gap: 10px;
 }
 
+.learn-more {
+  margin-block: var(--margin-40);
+  padding-block: var(--padding-50);
+ 
+  background: var(--clr-bg-0);
+  color: var(--clr-light);
+}
 
+.video-desc {
+   padding-inline: var(--padding-10);
+  font-size: var(--lg-fts);
+  font-weight: 100;
+  line-height: 1.3 ;
+  margin-bottom: var(--margin-20)
+}
+
+.video-con {
+ max-width: 100%;
+  
+}
+
+.learn-more-btn {
+  width: 150px;
+  margin-top: var(--margin-20);
+
+}
 
 
 
