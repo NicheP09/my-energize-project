@@ -35,9 +35,6 @@
 a {
    text-decoration: none;
 };
-li {
-    list-style: none;
-};
 .flex1 {
   display: flex;
   justify-content: center;
@@ -137,8 +134,8 @@ nav {
 }
 
 ul {
-
-  padding-top: 80px;
+   list-style: none;
+  padding-top: 70px;
   line-height: 2;
 }
 nav li {
@@ -207,15 +204,15 @@ main {
   column-gap: 10px;
 }
 
-.learn-more {
-  margin-block: var(--margin-40);
+.section-setting {
+  
   padding-block: var(--padding-50);
  
   background: var(--clr-bg-0);
   color: var(--clr-light);
 }
 
-.video-desc {
+.desc {
    padding-inline: var(--padding-10);
   font-size: var(--lg-fts);
   font-weight: 100;
@@ -231,8 +228,22 @@ main {
 .learn-more-btn {
   width: 150px;
   margin-top: var(--margin-20);
-
 }
 
+.testimonials {
+ padding-inline: var(--padding-15);
+}
 
-
+.testimonial-card {
+  background-color: var(--clr-light-1);
+  color: var(--clr-dark);
+  font-size: var(--xs-fts);
+  padding: var(--padding-20);
+  text-align: start;
+  margin-bottom: var(--margin-30);
+  border-radius: 10px;
+}
+.name {
+  font-weight: bold;
+  margin-top: var(--margin-30);
+}
