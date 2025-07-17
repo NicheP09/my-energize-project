@@ -10,14 +10,18 @@
   --clr-light: #f4f4f6;
   --clr-light-1: #fff;
   --clr-dark: #111;
+  --clr-dark-2: #333333;
   --clr-a: rgb(51, 51, 51);
   --clr-bg-100: rgb(255, 255, 255);
+  --clr-pricing-bg: rgb(244, 244, 246);
   --clr-bg-0: rgb(0, 0, 0);
 
   --xs-fts: clamp(1rem,  1.1rem, 1.5rem);
-   --s-fts: clamp(0.8rem,  1.4rem, 2.5rem);
+  --s-fts: clamp(0.8rem,  1.4rem, 2.5rem);
   --reg-fts: clamp(1.5rem, 2vw + 1rem, 3rem);
+  --norm-fts: clamp(1rem,  1.4rem, 2.5rem);
   --lg-fts: clamp(2rem, 3vw + 1.5rem, 3rem);
+  --h3-fts: clamp(1rem,  2rem, 2.5rem);
   --padding-10: 10px;
   --padding-15: 15px;
   --padding-20: 20px;
@@ -25,16 +29,20 @@
   --padding-40: 40px;
   --padding-50: 50px;
   --box-shadow-1:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  --margin-10: 5px;
   --margin-10: 10px;
   --margin-20: 20px;
   --margin-30: 30px;
   --margin-40: 40px;
+  --margin-50: 50px;
 }
 
 
 a {
    text-decoration: none;
 };
+
+
 .flex1 {
   display: flex;
   justify-content: center;
@@ -53,10 +61,8 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;;
-   font-size: var(--s-fts);
+  font-size: var(--s-fts);
   background-color: var(--clr-bg-100);
-
-  
 }
 
 
@@ -64,7 +70,6 @@ body {
   width: 100%;
   max-width: 1100px;
   text-align: center;
-  
 }
 
 header  {
@@ -165,12 +170,14 @@ nav a {
 }
 
 main {
-  padding: var(--padding-15);
+  padding-block: var(--padding-15);
   line-height: 1.3;
 }
 .hero {
+   padding-inline: 20px;
   height: 770px;
   background: url(/images/hero-bg-mobile.png) center bottom / 350px 400px no-repeat;
+  margin-bottom: var(--margin-50);
 }
 .hero h1 {
   margin-top: var(--margin-40)
@@ -231,7 +238,8 @@ main {
 }
 
 .testimonials {
- padding-inline: var(--padding-15);
+ padding: var(--padding-15);
+
 }
 
 .testimonial-card {
@@ -247,3 +255,87 @@ main {
   font-weight: bold;
   margin-top: var(--margin-30);
 }
+
+
+.pricing-wrapper {
+  padding-inline: var(--padding-10);
+  padding-block: var(--padding-30);
+  color:var(--clr-dark-2);
+  background:  var(--clr-light-1);
+}
+
+.pricing-title {
+  font-weight: 200;
+  margin-bottom: var(--margin-20);
+  font-size: var(--h3-fts);
+ 
+}
+
+.pricing-plan {
+  font-size: var(--xs-fts);
+  margin-bottom: var(--margin-40);
+  padding-inline: var(--padding-20);
+}
+
+.price-category {
+  background: var(--clr-pricing-bg);
+  padding-top: var(--padding-50);
+  padding-bottom: var(--padding-20);
+  padding-inline: var(--padding-20);
+  border-radius: 10px;
+  text-align: start;
+  color: var(--clr-dark-2);
+  line-height: 1.5;
+  margin-bottom: var(--margin-30);
+  
+}
+
+.price-tag{
+  font-size: var(--h3-fts);
+}
+
+.small-design {
+   font-size: var(--xs-fts);
+   margin-bottom: var(--margin-40);
+  
+}
+.bigger {
+   font-size: var(--lg-fts);
+  
+}
+
+.price-type {
+  margin-bottom: var(--margin-20);
+}
+
+hr {
+border-color: #3333331a;
+}
+
+.perks-con {
+  padding-top: var(--margin-30);
+}
+.perks {
+  margin-bottom: var(--margin-20);
+}
+
+.entity {
+  margin-right: var(--margin-10);
+  color: var(--clr-a);
+}
+
+.bg-dark {
+  color: var(--clr-light-1);
+  background-color: var(--clr-dark);
+}
+
+.payment-type {
+  background-color: var(--clr-light-1);
+}
+
+.h3 {
+   font-weight: 200;
+  margin-bottom: var(--margin-20);
+  font-size: var(--h3-fts);
+}
+
