@@ -26,7 +26,6 @@ faqsTag.forEach((Tag, index) => {
 
     icons.forEach((icon,index) => {
       if (match === index) {
-         console.log(icon)
         icon.classList.toggle('fa-minus')
        
       }

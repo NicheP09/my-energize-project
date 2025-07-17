@@ -422,3 +422,19 @@ border-color: #3333331a;
 .show {
   display: block;
 }
+
+
+.footer-wrapper {
+  padding: var(--padding-40) var(--padding-20);
+  text-align: start;
+  padding: 20
+}
+
+.rights p {
+  margin-block: var(--margin-20);
+}
+
+.copyrights {
+  font-size: 0.8rem;
+}
+
