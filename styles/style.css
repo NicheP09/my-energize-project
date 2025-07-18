@@ -156,12 +156,13 @@ nav ul {
 }
 nav li {
   padding-bottom: var(--padding-20);
+  
 }
-nav a {
+nav li a {
  
   color: var(--clr-a);
   font-weight: 600;
-  font-size: var(--s-fts);
+   font-size: var(--s-fts);
 }
 
 .login-button {
@@ -480,7 +481,7 @@ border-color: #3333331a;
     all:initial;
   }
   nav li a {
-    font-size: var(--xs-fts);
+    
   }
  
   .hero {
