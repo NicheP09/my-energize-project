@@ -551,5 +551,12 @@ border-color: #3333331a;
   header,.hero, .pricing,.learn-more, .testimonials,.faqs, footer {
     padding-inline: var(--padding-50);
   }
+
+  .hero {
+  
+  background-size: 95%;
+ 
+ 
+}
  
 }
