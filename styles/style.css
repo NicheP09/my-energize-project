@@ -412,7 +412,7 @@ border-color: #3333331a;
 .faqs-tag {
   margin-bottom: var(--margin-50);
   font-weight: 600;
- 
+  font-family: var(--s-fts);
 } 
 .fa{
   font-size: var(--s-fts);
