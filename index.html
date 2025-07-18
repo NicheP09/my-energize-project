@@ -14,7 +14,7 @@
 <body>
 
   <div class="energize-wrapper">
-    <header>
+    <header class="flex3">
       <p class="logo">
         <img src="/images/logo.png" alt="dumbell with enegize caption" width="120">
       </p>
@@ -26,16 +26,16 @@
         <li><a href="#"> Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Blog</a></li>
+        <li> <a href=""><button class="login-button">
+        <ion-icon name="person" class="person-icon"></ion-icon> Login </button></a> </li>
       </ul>
-      <button class="login-button flex1">
-        <ion-icon name="person"></ion-icon>
-        <span class="log">Login</span>
-      </button>
+     
       </nav>
     </header>
 
     <main>
       <section class="hero ">
+        <div class="hero-content">
         <h1>
           Transform Your Fitness Journey. Start Today!
         </h1>
@@ -49,6 +49,8 @@
           Book a Demo
         </button>
         </div>
+        </div>
+
     
       </section>
 
@@ -56,7 +58,7 @@
         <div class="learn-more-wrapper">
           <h2 class="video-desc desc">Discover how our app works and get fit in no time</h2>
           <div class="video-con">
-            <img src="images/enegize2.png" alt="video preview" class="video-preview" width="300" height="auto">
+           <a href="#"> <img src="images/enegize2.png" alt="video preview" class="video-preview"></a>
           </div>
 
          <a href="#"><button class="learn-more-btn primary-button"  >Get Started</button></a>
@@ -71,16 +73,16 @@
             Hear from our statisfied users who transformed their lives.
           </div> 
         </div>
-
+        <div class="testinonial-card-con">
         <div class="testimonial-card">
-          <p class="testimony">  "I've lost 10 pounds in just a month! this app keeps me motivated and on track with my fitness goals."</p>
+          <p class="testimony">  "I've lost 10 pounds in just a month! This app keeps me motivated and on track with my fitness goals."</p>
           <p class="name">Alice Johnson</p>
           <p class="profession">Health Coach</p>
         
         </div>
 
          <div class="testimonial-card">
-          <p class="testimony">"The workout plans are easy to followm, and progress tracking feature is incredibly helpful. I feel stronger every day."</p>
+          <p class="testimony">"The workout plans are easy to follow, and progress tracking feature is incredibly helpful. I feel stronger every day!"</p>
           <p class="name">Mark Thompson</p>
           <p class="profession">Personal Trainer</p>
         
@@ -92,6 +94,7 @@
           <p class="profession">Fitness Enthusiast</p>
         
         </div>
+        </div>
 
 
       </section>
@@ -101,6 +104,7 @@
           <h3 class="pricing-title align-center">Pricing</h2>
           <p class="pricing-plan">Starts with our free plan and unlock premium features as you grow. </p>
 
+          <div class="price-category-con">
           <div class="price-category bg-lt">
             <h3 class="price-tag pricing-title">Basic</h3>
             <p class="price-desc small-design">Ideal for beginners to track workout and monitor progress.</p>
@@ -115,7 +119,7 @@
             <p class="perks"><span class="entity">&#10004;</span>  Nutrition Tracker</p>
             <p class="perks"><span class="entity">&#10004;</span> Access to community challenges</p>
               </div>
-            <a href="#"><button class="primary-button">Get started</button></a>
+            <a href="#"><button class="primary-button price-btn">Get started</button></a>
           
 
           </div>
@@ -137,7 +141,8 @@
             <p class="perks"><span class="entity">&#10004;</span> Advanced analytics</p>
             <p class="perks"><span class="entity">&#10004;</span> Offline access</p>
 
-            <a href="#"><button class="primary-button">Get started</button></a>
+            <a href="#"><button class="primary-button price-btn">Get started</button></a>
+          </div>
           </div>
           </div>
           <p class="payment-type small-design">
@@ -153,9 +158,9 @@
 
         <div class="faqs-category ">
         <ul class="flex3">
-        <li><button class="active">All</button></li>
-        <li><button> Getting Started</button></li>
-        <li><button>Pricing</button></li>
+        <li class="active">All</li>
+        <li> Getting Started</li>
+        <li>Pricing</li>
         </ul>
         </div>
         
