@@ -18,8 +18,8 @@
   --clr-faq-bg: rgb(221, 221, 221);
   --clr-testimonial-bg: rgb(17, 17, 17);
   --xs-fts:   1rem;
-  --s-fts: min(1.2rem, 1.5rem);
-  --reg-fts: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  --s-fts: clamp(16px, 2vw, 20px); ;
+  --reg-fts: clamp(1.5rem, 2vw + 1.3rem, 2.5rem);
   --norm-fts: clamp(1rem,  1.4rem, 2.5rem);
   --lg-fts: clamp(1.5rem, 2vw + 1.6rem, 3rem);
   --h3-fts: clamp(1.5rem, 2vw + 2rem, 2.5rem);
@@ -90,7 +90,7 @@ header  {
 
 .hamburger-button {
   width: 40px;
-  position: fixed;
+  position: absolute;
   right: 20px;
   z-index: 200;
 }
@@ -115,7 +115,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  width: 200px;
+  width: 220px;
   text-align: start;
   background-color: var(--clr-bg-100);
   height: 100dvh;
@@ -205,7 +205,7 @@ main {
 .primary-button {
   width: 100%;
   height: 50px;
-  font-size: var(--xs-fts);
+  font-size: var(--s-fts);
   font-weight: 600;
   color: var(--clr-light-1);
   background-color: var(--clr-primary);
