@@ -78,19 +78,21 @@ body {
 
 .energize-wrapper {
   text-align: center;
-  padding-top: var(--padding-20);
 }
 
 header  {
  
   padding: var(--padding-20);
- 
+  position: relative;
+
 }
 
 
 .hamburger-button {
   width: 40px;
- 
+  position: fixed;
+  right: 20px;
+  z-index: 200;
 }
 button {
   border: transparent;
@@ -103,6 +105,7 @@ button {
   height: 3px;
   background: var(--clr-dark);
   margin-bottom: var(--margin-5);
+ 
 }
 
 
@@ -111,8 +114,8 @@ nav {
   
   position: fixed;
   top: 0;
-  left: 60%;
   right: 0;
+  width: 200px;
   text-align: start;
   background-color: var(--clr-bg-100);
   height: 100dvh;
