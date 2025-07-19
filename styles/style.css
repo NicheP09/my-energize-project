@@ -21,7 +21,7 @@
   --s-fts: min(1.2rem, 1.5rem);
   --reg-fts: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   --norm-fts: clamp(1rem,  1.4rem, 2.5rem);
-  --lg-fts: clamp(1.5rem, 2vw + 2rem, 3rem);
+  --lg-fts: clamp(1.5rem, 2vw + 1.6rem, 3rem);
   --h3-fts: clamp(1.5rem, 2vw + 2rem, 2.5rem);
   --padding-10: 10px;
   --padding-15: 15px;
@@ -78,20 +78,19 @@ body {
 
 .energize-wrapper {
   text-align: center;
+  padding-top: var(--padding-20);
 }
 
 header  {
  
   padding: var(--padding-20);
-  position: relative;
  
 }
 
 
 .hamburger-button {
   width: 40px;
-  position: relative;
-  z-index: 200;
+ 
 }
 button {
   border: transparent;
@@ -99,28 +98,14 @@ button {
   outline: transparent;
   cursor: pointer;
 }
-.hamburger-button button, .hamburger-button button::before, .hamburger-button button::after {
+.hamburger-button .line {
   width: 30px;
   height: 3px;
   background: var(--clr-dark);
+  margin-bottom: var(--margin-5);
 }
 
-.hamburger-button button::before, .hamburger-button button::after {
-  content: '';
-  position: absolute;
-}
 
-.hamburger-button button::before {
-  top: 6px;
-  right: 5px;
- 
-
-}
-
-.hamburger-button button::after {
-  top: -4px ;
-  right: 5px;
-}
 
 nav {
   
@@ -193,7 +178,7 @@ main {
 .hero {
   padding-inline: 20px;
   height: 770px;
-  background: url(/images/hero-bg-mobile.png) center bottom / 350px 400px no-repeat;
+  background: url(/images/hero-bg-mobile.png) center 350px / 350px 400px no-repeat;
   margin-bottom: var(--margin-50);
 }
 
